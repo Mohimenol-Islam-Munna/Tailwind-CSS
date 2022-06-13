@@ -1,7 +1,6 @@
 .custom_clip_path {
   position: relative;
   z-index: -1;
-  background-color: red;
 }
 
 .custom_clip_path::before {
@@ -12,7 +11,6 @@
   width: 100%;
   height: 100%;
   z-index: -1;
-  background-color: green;
   -webkit-clip-path: polygon(
     0 0,
     100% 0,
@@ -33,6 +31,22 @@
     57% 38%,
     27% 30%
   );
+}
+.custom_clip_path2 {
+  position: relative;
+  z-index: -1;
+}
+
+.custom_clip_path2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  -webkit-clip-path: circle(24.7% at 52% 49%);
+  clip-path: circle(24.7% at 52% 49%);
 }
 
 .titl {
