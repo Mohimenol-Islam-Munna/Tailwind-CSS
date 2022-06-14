@@ -1,6 +1,6 @@
 .custom_clip_path {
   position: relative;
-  z-index: -1;
+  z-index: 1;
 }
 
 .custom_clip_path::before {

@@ -14,7 +14,7 @@ function App() {
 
       {/* clip path  */}
       <div className="w-[30%] mt-5 mx-auto rounded-lg p-20 bg-red-300 before:bg-indigo-400 before:rounded-lg custom_clip_path">
-        <h2 className="text-center text-white text-2xl titl">clip path</h2>
+        <h2 className="text-center text-white text-2xl titl">clip path to</h2>
       </div>
 
       <div className="w-[30%] mt-5 mx-auto rounded-lg p-2 py-20 bg-green-300 before:bg-indigo-400 before:rounded-lg custom_clip_path2">
@@ -64,7 +64,7 @@ function App() {
 
       {/* sidebar navigation  */}
       <div>
-        <div
+        {/* <div
           id="left_navigation"
           className={`h-screen w-[${leftNavigationWidth}%] bg-gray-900 fixed top-0 left-0 overflow-hidden z-50 box-border transition-[width]`}
         >
@@ -112,7 +112,7 @@ function App() {
           >
             Portfolio
           </a>
-        </div>
+        </div> */}
 
         <div className="w-[25%] mx-auto border-2 space-y-2 mb-48">
           <div>
@@ -139,6 +139,34 @@ function App() {
             <button className="w-full p-2 bg-red-400">
               SideBar Navigation top
             </button>
+          </div>
+        </div>
+
+        <div className="w-[80%] mx-auto mb-20 border border-red-900">
+          <h2>Tailwind Flex</h2>
+          <div className="my-10 flex bg-slate-200 py-5">
+            <div className="border border-red-400">Left</div>
+            <div className="border border-green-700 text-center w-52 basis-0">
+              Center
+            </div>
+            <div className="border border-blue-700">Right</div>
+          </div>
+        </div>
+
+        {/* custom checkout  */}
+        <div className="w-[80%] mx-auto my-20 border">
+          <h2>Custom Checkbox</h2>
+          <div className="inline-block w-32 my-10 p-5 bg-slate-200 border-4 border-green-900 text-center">
+            <input
+              type="checkbox"
+              name="check"
+              id="check"
+              className="peer hidden"
+            />
+            <label
+              htmlFor="check"
+              className="group block w-full h-[35px] border-2 border-yellow-900 rounded-full ring-4 before:content-[''] before:bg-green-400 relative z-10 before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:rounded-full before:-z-10 before:translate-x-[-50%] overflow-hidden peer-checked:before:translate-x-[50%]"
+            ></label>
           </div>
         </div>
       </div>
