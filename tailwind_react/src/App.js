@@ -1,12 +1,97 @@
 import React, { useState } from "react";
 import "./App.css";
+import Particles from "react-tsparticles";
+import { loadFull } from "tsparticles";
 
-function App() {
+const App = () => {
   const [leftNavigationWidth, setLeftNavigationWidth] = useState(0);
+
+  const particlesInit = async (main) => {
+    console.log(main);
+
+    await loadFull(main);
+  };
+
+  const particlesLoaded = (container) => {
+    console.log(container);
+  };
 
   return (
     <>
-      <div className="bg-green-500 p-8">
+      {/* ts particles  */}
+      <Particles
+        id="tsparticles"
+        init={particlesInit}
+        loaded={particlesLoaded}
+        options={{
+          fpsLimit: 120,
+          interactivity: {
+            events: {
+              onClick: {
+                enable: true,
+                mode: "push",
+              },
+              onHover: {
+                enable: true,
+                mode: "repulse",
+              },
+              resize: true,
+            },
+            modes: {
+              push: {
+                quantity: 4,
+              },
+              repulse: {
+                distance: 200,
+                duration: 0.4,
+              },
+            },
+          },
+          particles: {
+            color: {
+              value: "#ffffff",
+            },
+            links: {
+              color: "#ffffff",
+              distance: 150,
+              enable: true,
+              opacity: 0.5,
+              width: 1,
+            },
+            collisions: {
+              enable: true,
+            },
+            move: {
+              direction: "none",
+              enable: true,
+              outModes: {
+                default: "bounce",
+              },
+              random: false,
+              speed: 6,
+              straight: false,
+            },
+            number: {
+              density: {
+                enable: true,
+                area: 800,
+              },
+              value: 80,
+            },
+            opacity: {
+              value: 0.5,
+            },
+            shape: {
+              type: "circle",
+            },
+            size: {
+              value: { min: 1, max: 5 },
+            },
+          },
+          detectRetina: true,
+        }}
+      />
+      <div className="bg-black p-8 z-50" style={{ zIndex: 9999 }}>
         <h2 className="text-center text-white font-bold text-2xl">
           React Tailwind
         </h2>
@@ -17,14 +102,14 @@ function App() {
         <h2 className="text-center text-white text-2xl titl">clip path to</h2>
       </div>
 
-      <div className="w-[30%] mt-5 mx-auto rounded-lg p-2 py-20 bg-green-300 before:bg-indigo-400 before:rounded-lg custom_clip_path2">
+      <div className="w-[30%] mt-5 mx-auto rounded-lg p-2 py-20 bg-green-300 before:bg-indigo-400 before:rounded-lg custom_clip_path2 z-50">
         <p className="text-center text-white text-2xl titl">
           clip path with extended
         </p>
       </div>
 
       {/* dropdown button  */}
-      <div className="w-52 mt-10 mb-60 mx-auto relative group border">
+      <div className="w-52 mt-10 mb-60 mx-auto relative group border z-50">
         <button className="w-full bg-indigo-700 p-5 text-white">
           Dropdown
         </button>
@@ -172,6 +257,6 @@ function App() {
       </div>
     </>
   );
-}
+};
 
 export default App;
