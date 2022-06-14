@@ -165,7 +165,7 @@ function App() {
             />
             <label
               htmlFor="check"
-              className="group block w-full h-[35px] border-2 border-yellow-900 rounded-full ring-4 before:content-[''] before:bg-green-400 relative z-10 before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:rounded-full before:-z-10 before:translate-x-[-40%] overflow-hidden peer-checked:before:translate-x-[40%] before:transition-all before:duration-500"
+              className="group block w-full h-[35px] border-4 border-red-400 rounded-full ring-4 before:flex before:items-center before:content-['*'] before:justify-end peer-checked:before:justify-start before:pr-5 peer-checked:before:pl-5 before:bg-green-400 relative z-10 before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:rounded-full before:-z-10 before:translate-x-[-40%] overflow-hidden peer-checked:before:translate-x-[40%] before:transition-all before:duration-500"
             ></label>
           </div>
         </div>
