@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 const Move = () => {
   const [positionX, setPositionX] = useState(0);
   const [positionY, setPositionY] = useState(0);
-  const [decrease, setDecrease] = useState(false);
 
   useEffect(() => {
     let moveBox = document.getElementById("moveBox");
@@ -12,8 +11,7 @@ const Move = () => {
     const interval = setInterval(() => {
       let bounds = moveBox.getBoundingClientRect();
 
-      if (bounds.top > window.innerHeight - moveBox.clientHeight - 5) {
-        console.log("bounds after > 100::", bounds.top);
+      if (bounds.top > window.innerHeight - moveBox.clientHeight - 4) {
         flag = true;
       } else if (bounds.top <= 0) {
         flag = false;
@@ -43,6 +41,7 @@ const Move = () => {
               position: "absolute",
               top: positionY + "px",
               left: positionX + "px",
+              zIndex: 9999,
             }
           : {
               width: "100px",
@@ -51,6 +50,7 @@ const Move = () => {
               backgroundColor: "red",
               top: positionY + "px",
               left: positionX + "px",
+              zIndex: 9999,
             }
       }
     >

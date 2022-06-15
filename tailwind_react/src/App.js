@@ -21,16 +21,8 @@ const App = () => {
     <>
       <Move />
 
-
-
-
-
-
-
-
-      
       {/* ts particles  */}
-      {/* <Particles
+      <Particles
         id="tsparticles"
         init={particlesInit}
         loaded={particlesLoaded}
@@ -106,21 +98,21 @@ const App = () => {
         <h2 className="text-center text-white font-bold text-2xl">
           React Tailwind
         </h2>
-      </div> */}
+      </div>
 
       {/* clip path  */}
-      {/* <div className="w-[30%] mt-5 mx-auto rounded-lg p-20 bg-red-300 before:bg-indigo-400 before:rounded-lg custom_clip_path">
+      <div className="w-[30%] mt-5 mx-auto rounded-lg p-20 bg-red-300 before:bg-indigo-400 before:rounded-lg custom_clip_path">
         <h2 className="text-center text-white text-2xl titl">clip path to</h2>
-      </div> */}
+      </div>
 
-      {/* <div className="w-[30%] mt-5 mx-auto rounded-lg p-2 py-20 bg-green-300 before:bg-indigo-400 before:rounded-lg custom_clip_path2 z-50">
+      <div className="w-[30%] mt-5 mx-auto rounded-lg p-2 py-20 bg-green-300 before:bg-indigo-400 before:rounded-lg custom_clip_path2 z-50">
         <p className="text-center text-white text-2xl titl">
           clip path with extended
         </p>
-      </div> */}
+      </div>
 
       {/* dropdown button  */}
-      {/* <div className="w-52 mt-10 mb-60 mx-auto relative group border z-50">
+      <div className="w-52 mt-10 mb-60 mx-auto relative group border z-50">
         <button className="w-full bg-indigo-700 p-5 text-white">
           Dropdown
         </button>
@@ -156,11 +148,11 @@ const App = () => {
             Portfolio
           </a>
         </div>
-      </div> */}
+      </div>
 
       {/* sidebar navigation  */}
-      {/* <div>
-        {/* <div
+      <div>
+        <div
           id="left_navigation"
           className={`h-screen w-[${leftNavigationWidth}%] bg-gray-900 fixed top-0 left-0 overflow-hidden z-50 box-border transition-[width]`}
         >
@@ -208,9 +200,9 @@ const App = () => {
           >
             Portfolio
           </a>
-        </div> */}
+        </div>
 
-      {/* <div className="w-[25%] mx-auto border-2 space-y-2 mb-48">
+        <div className="w-[25%] mx-auto border-2 space-y-2 mb-48">
           <div>
             <button
               className="w-full p-2 bg-red-400"
@@ -236,9 +228,9 @@ const App = () => {
               SideBar Navigation top
             </button>
           </div>
-        </div> */}
+        </div>
 
-      {/* <div className="w-[80%] mx-auto mb-20 border border-red-900">
+        <div className="w-[80%] mx-auto mb-20 border border-red-900">
           <h2>Tailwind Flex</h2>
           <div className="my-10 flex bg-slate-200 py-5">
             <div className="border border-red-400">Left</div>
@@ -247,10 +239,10 @@ const App = () => {
             </div>
             <div className="border border-blue-700">Right</div>
           </div>
-        </div> */}
+        </div>
 
-      {/* custom checkout  */}
-      {/* <div className="w-[80%] mx-auto my-20 border">
+        {/* custom checkout  */}
+        <div className="w-[80%] mx-auto my-20 border">
           <h2>Custom Checkbox</h2>
           <div className="inline-block w-32 my-10 p-5 bg-slate-200 border-4 border-green-900 text-center">
             <input
@@ -264,8 +256,8 @@ const App = () => {
               className="group block w-full h-[35px] border-4 border-red-400 rounded-full ring-4 before:flex before:items-center before:content-['*'] before:justify-end peer-checked:before:justify-start before:pr-5 peer-checked:before:pl-5 before:bg-green-400 relative z-10 before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:rounded-full before:-z-10 before:translate-x-[-40%] overflow-hidden peer-checked:before:translate-x-[40%] before:transition-all before:duration-500"
             ></label>
           </div>
-        </div> */}
-      {/* </div>  */}
+        </div>
+      </div>
     </>
   );
 };
