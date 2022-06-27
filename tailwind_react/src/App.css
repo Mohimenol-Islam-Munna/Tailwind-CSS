@@ -52,3 +52,13 @@
 .titl {
   z-index: 2;
 }
+
+/* when use shape divider then it does not work like clipPath and there is no need before after  */
+/* when use shape divider then set fillc color  */
+
+.shape {
+  position: relative;
+  z-index: 1;
+  background-color: blueviolet;
+  background-image: url(/public/waves.svg);
+}

@@ -258,6 +258,13 @@ const App = () => {
           </div>
         </div>
       </div>
+
+      {/* shape divider  */}
+      <div className="w-[30%] my-16 mx-auto rounded-lg p-2 py-20 shape">
+        <p className="text-center text-white text-2xl">
+          shape divider with before after
+        </p>
+      </div>
     </>
   );
 };
